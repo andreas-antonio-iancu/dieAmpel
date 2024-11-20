@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1C1C1C;
+  font-family: 'DINSchrift', sans-serif;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'DINSchrift';
+  src: url('/assets/fonts/DIN-Schrift-1451-Mittelschrift-Alt.otf') format('opentype');
+}
+
+.full-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 3s ease-out;
+}
+
+.dot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 240px;
+
+  padding: 10px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: black;
+  border-radius: 2%;
+}
+
+.dot {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: black;
+  border-style: solid;
+  border-width: 15px;
+  border-color: black;
+}
+
+.empty-dot {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 35px;
+  height: 20px;
+  background-color: black;
+}
+
+#customInput {
+  font-family: 'DINSchrift', sans-serif;
+  font-size: 220px;
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 100vw;
+  height: 100vh;
+  caret-color: white;
+  background: transparent;
+  color: rgb(255, 199, 69);
+}
+
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  opacity: 100%;
+  z-index: 1;
+}
