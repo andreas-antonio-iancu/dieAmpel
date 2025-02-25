@@ -175,6 +175,5 @@ window.addEventListener('timerStarted', () => {
   lastColorChangeTime = millis();
 });
 
-
 function windowResized() { resizeCanvas(windowWidth, windowHeight); }
 function doubleClicked() { doubleClickMode = !doubleClickMode; }
