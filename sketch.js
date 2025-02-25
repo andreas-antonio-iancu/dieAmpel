@@ -21,7 +21,7 @@ let doubleClickMode = false; // Flag, um den Doppelklickmodus zu aktivieren/deak
 
 // Preload-Funktion für das Typeface
 function preload() {
-  myFont = loadFont("/assets/fonts/DIN-Schrift-1451-Mittelschrift-Alt.otf");
+  myFont = loadFont("assets/fonts/DIN-Schrift-1451-Mittelschrift-Alt.otf");
 }
 
 function setup() {
