@@ -11,7 +11,7 @@ body {
 
 @font-face {
   font-family: 'DINSchrift';
-  src: url('/assets/fonts/DIN-Schrift-1451-Mittelschrift-Alt.otf') format('opentype');
+  src: url('assets/fonts/DIN-Schrift-1451-Mittelschrift-Alt.otf') format('opentype');
 }
 
 .full-screen {
