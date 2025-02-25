@@ -14,14 +14,14 @@ const r = "rgb(214,54,62)";  // Rot
 // Funktion, um die Farben des Ampels zu animieren
 function animatePoints() {
   let dot1 = document.getElementById('dot1');
-  let line = document.getElementById('line');
+  let linie = document.getElementById('linie');
   let dot3 = document.getElementById('dot3');
 
   // Animation von den Farben
   setTimeout(() => { 
     dot1.style.backgroundColor = r; 
     setTimeout(() => { 
-      line.style.backgroundColor = y;
+      linie.style.backgroundColor = y;
       setTimeout(() => { 
         dot3.style.backgroundColor = g;
         // Nach der Animation zur Eingabeseite wechseln
